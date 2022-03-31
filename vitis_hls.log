@@ -1,0 +1,28 @@
+INFO: [HLS 200-10] Running 'E:/vivado/Vitis_HLS/2021.1/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'Lenovo' on host 'desktop-41m1b7s' (Windows NT_amd64 version 6.2) on Wed Mar 30 10:35:29 +0800 2022
+INFO: [HLS 200-10] In directory 'G:/source/board'
+Sourcing Tcl script 'G:/source/board/conv_core/solution1/csim.tcl'
+INFO: [HLS 200-1510] Running: open_project conv_core 
+INFO: [HLS 200-10] Opening project 'G:/source/board/conv_core'.
+INFO: [HLS 200-1510] Running: set_top conv_core 
+INFO: [HLS 200-1510] Running: add_files conv_core/conv_core.cpp 
+INFO: [HLS 200-10] Adding design file 'conv_core/conv_core.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files conv_core/conv_core.h 
+INFO: [HLS 200-10] Adding design file 'conv_core/conv_core.h' to the project
+INFO: [HLS 200-1510] Running: add_files -tb conv_core/main.cpp 
+INFO: [HLS 200-10] Adding test bench file 'conv_core/main.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution 'G:/source/board/conv_core/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+ERROR: [HLS 200-1023] Part 'xck26sfvc784-2LV-c' is not installed.
+command 'create_platform' returned error code
+    while executing
+"source G:/source/board/conv_core/solution1/csim.tcl"
+    invoked from within
+"hls::main G:/source/board/conv_core/solution1/csim.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel 1 hls::main {*}$newargs"
+    (procedure "hls_proc" line 16)
+    invoked from within
+"hls_proc [info nameofexecutable] $argv"

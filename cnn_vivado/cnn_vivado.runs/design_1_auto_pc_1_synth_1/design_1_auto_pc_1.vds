@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Wed Mar 30 17:09:13 2022
+# Process ID: 9092
+# Current directory: G:/source/board/cnn_vivado/cnn_vivado.runs/design_1_auto_pc_1_synth_1
+# Command line: vivado.exe -log design_1_auto_pc_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_auto_pc_1.tcl
+# Log file: G:/source/board/cnn_vivado/cnn_vivado.runs/design_1_auto_pc_1_synth_1/design_1_auto_pc_1.vds
+# Journal file: G:/source/board/cnn_vivado/cnn_vivado.runs/design_1_auto_pc_1_synth_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_auto_pc_1.tcl -notrace
+create_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 1211.969 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/source/board/conv_core/solution1/conv_core'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/vivado/Vivado/2021.1/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1211.969 ; gain = 0.000
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_1_auto_pc_1, cache-ID = 028c1b77a29338d6.
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 30 17:10:09 2022...

@@ -1,0 +1,14 @@
+INFO-FLOW: Workspace G:/source/board/conv_core/solution1 opened at Wed Mar 30 10:35:30 +0800 2022
+Execute     ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     set_part xck26sfvc784-2LV-c 
+Execute       create_platform xck26sfvc784-2LV-c -board  
+DBG:HLSDevice: Trying to load device library: E:/vivado/Vitis_HLS/2021.1\lib\win64.o\librdi_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: E:/vivado/Vivado/2021.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+ERROR: [HLS 200-1023] Part 'xck26sfvc784-2LV-c' is not installed.
+Command       create_platform done; error code: 1; 1.046 sec.
+Command     set_part done; error code: 2; 1.046 sec.
+Command   open_solution done; error code: 2; 1.11 sec.
+Command ap_source done; error code: 1; 1.148 sec.
+Execute cleanup_all 

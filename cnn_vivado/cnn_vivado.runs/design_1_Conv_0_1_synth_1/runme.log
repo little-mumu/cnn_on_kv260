@@ -1,0 +1,383 @@
+
+*** Running vivado
+    with args -log design_1_Conv_0_1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_Conv_0_1.tcl
+
+
+
+****** Vivado v2021.1 (64-bit)
+  **** SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source design_1_Conv_0_1.tcl -notrace
+create_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 1212.047 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/source/board/conv_core/solution1/conv_core'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/vivado/Vivado/2021.1/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1212.047 ; gain = 0.000
+Command: synth_design -top design_1_Conv_0_1 -part xck26-sfvc784-2LV-c -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 20712
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1580.180 ; gain = 125.234
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_Conv_0_1' [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ip/design_1_Conv_0_1/synth/design_1_Conv_0_1.v:59]
+INFO: [Synth 8-6157] synthesizing module 'Conv' [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv.v:12]
+INFO: [Synth 8-6157] synthesizing module 'Conv_Conv_Pipeline_Input_Channel' [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_Conv_Pipeline_Input_Channel.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Conv_fmul_32ns_32ns_32_3_max_dsp_1' [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_fmul_32ns_32ns_32_3_max_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Conv_fmul_32ns_32ns_32_3_max_dsp_1_ip' [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/ip/Conv_fmul_32ns_32ns_32_3_max_dsp_1_ip.v:60]
+INFO: [Synth 8-6157] synthesizing module 'LUT1' [E:/vivado/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59102]
+INFO: [Synth 8-6155] done synthesizing module 'LUT1' (1#1) [E:/vivado/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59102]
+INFO: [Synth 8-6155] done synthesizing module 'Conv_fmul_32ns_32ns_32_3_max_dsp_1_ip' (18#1) [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/ip/Conv_fmul_32ns_32ns_32_3_max_dsp_1_ip.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'Conv_fmul_32ns_32ns_32_3_max_dsp_1' (19#1) [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_fmul_32ns_32ns_32_3_max_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Conv_flow_control_loop_pipe_sequential_init' [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_flow_control_loop_pipe_sequential_init.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'Conv_flow_control_loop_pipe_sequential_init' (20#1) [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_flow_control_loop_pipe_sequential_init.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'Conv_Conv_Pipeline_Input_Channel' (21#1) [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_Conv_Pipeline_Input_Channel.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Conv_control_s_axi' [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_control_s_axi.v:6]
+INFO: [Synth 8-155] case statement is not full and has no default [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_control_s_axi.v:310]
+INFO: [Synth 8-6155] done synthesizing module 'Conv_control_s_axi' (22#1) [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_control_s_axi.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Conv_gmem_m_axi' [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_gmem_m_axi.v:8]
+INFO: [Synth 8-6157] synthesizing module 'Conv_gmem_m_axi_write' [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_gmem_m_axi.v:1653]
+INFO: [Synth 8-6157] synthesizing module 'Conv_gmem_m_axi_fifo' [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_gmem_m_axi.v:418]
+INFO: [Synth 8-6155] done synthesizing module 'Conv_gmem_m_axi_fifo' (23#1) [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_gmem_m_axi.v:418]
+INFO: [Synth 8-6157] synthesizing module 'Conv_gmem_m_axi_reg_slice' [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_gmem_m_axi.v:314]
+INFO: [Synth 8-6155] done synthesizing module 'Conv_gmem_m_axi_reg_slice' (24#1) [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_gmem_m_axi.v:314]
+INFO: [Synth 8-6157] synthesizing module 'Conv_gmem_m_axi_fifo__parameterized0' [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_gmem_m_axi.v:418]
+INFO: [Synth 8-6155] done synthesizing module 'Conv_gmem_m_axi_fifo__parameterized0' (24#1) [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_gmem_m_axi.v:418]
+INFO: [Synth 8-6157] synthesizing module 'Conv_gmem_m_axi_buffer' [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_gmem_m_axi.v:529]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_gmem_m_axi.v:581]
+INFO: [Synth 8-6155] done synthesizing module 'Conv_gmem_m_axi_buffer' (25#1) [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_gmem_m_axi.v:529]
+INFO: [Synth 8-6157] synthesizing module 'Conv_gmem_m_axi_fifo__parameterized1' [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_gmem_m_axi.v:418]
+INFO: [Synth 8-6155] done synthesizing module 'Conv_gmem_m_axi_fifo__parameterized1' (25#1) [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_gmem_m_axi.v:418]
+INFO: [Synth 8-6157] synthesizing module 'Conv_gmem_m_axi_fifo__parameterized2' [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_gmem_m_axi.v:418]
+INFO: [Synth 8-6155] done synthesizing module 'Conv_gmem_m_axi_fifo__parameterized2' (25#1) [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_gmem_m_axi.v:418]
+INFO: [Synth 8-6155] done synthesizing module 'Conv_gmem_m_axi_write' (26#1) [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_gmem_m_axi.v:1653]
+INFO: [Synth 8-6157] synthesizing module 'Conv_gmem_m_axi_read' [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_gmem_m_axi.v:931]
+INFO: [Synth 8-6157] synthesizing module 'Conv_gmem_m_axi_buffer__parameterized0' [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_gmem_m_axi.v:529]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_gmem_m_axi.v:581]
+INFO: [Synth 8-6155] done synthesizing module 'Conv_gmem_m_axi_buffer__parameterized0' (26#1) [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_gmem_m_axi.v:529]
+INFO: [Synth 8-6157] synthesizing module 'Conv_gmem_m_axi_reg_slice__parameterized0' [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_gmem_m_axi.v:314]
+INFO: [Synth 8-6155] done synthesizing module 'Conv_gmem_m_axi_reg_slice__parameterized0' (26#1) [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_gmem_m_axi.v:314]
+INFO: [Synth 8-6155] done synthesizing module 'Conv_gmem_m_axi_read' (27#1) [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_gmem_m_axi.v:931]
+INFO: [Synth 8-6157] synthesizing module 'Conv_gmem_m_axi_throttle' [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_gmem_m_axi.v:709]
+INFO: [Synth 8-6155] done synthesizing module 'Conv_gmem_m_axi_throttle' (28#1) [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_gmem_m_axi.v:709]
+INFO: [Synth 8-6155] done synthesizing module 'Conv_gmem_m_axi' (29#1) [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_gmem_m_axi.v:8]
+INFO: [Synth 8-6157] synthesizing module 'Conv_fadd_32ns_32ns_32_4_full_dsp_1' [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_fadd_32ns_32ns_32_4_full_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Conv_fadd_32ns_32ns_32_4_full_dsp_1_ip' [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/ip/Conv_fadd_32ns_32ns_32_4_full_dsp_1_ip.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'Conv_fadd_32ns_32ns_32_4_full_dsp_1_ip' (39#1) [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/ip/Conv_fadd_32ns_32ns_32_4_full_dsp_1_ip.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'Conv_fadd_32ns_32ns_32_4_full_dsp_1' (40#1) [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_fadd_32ns_32ns_32_4_full_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Conv_fcmp_32ns_32ns_1_2_no_dsp_1' [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_fcmp_32ns_32ns_1_2_no_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Conv_fcmp_32ns_32ns_1_2_no_dsp_1_ip' [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/ip/Conv_fcmp_32ns_32ns_1_2_no_dsp_1_ip.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'Conv_fcmp_32ns_32ns_1_2_no_dsp_1_ip' (44#1) [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/ip/Conv_fcmp_32ns_32ns_1_2_no_dsp_1_ip.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'Conv_fcmp_32ns_32ns_1_2_no_dsp_1' (45#1) [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_fcmp_32ns_32ns_1_2_no_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Conv_sdiv_18ns_9ns_16_22_seq_1' [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_sdiv_18ns_9ns_16_22_seq_1.v:88]
+INFO: [Synth 8-6157] synthesizing module 'Conv_sdiv_18ns_9ns_16_22_seq_1_divseq' [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_sdiv_18ns_9ns_16_22_seq_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'Conv_sdiv_18ns_9ns_16_22_seq_1_divseq' (46#1) [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_sdiv_18ns_9ns_16_22_seq_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'Conv_sdiv_18ns_9ns_16_22_seq_1' (47#1) [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_sdiv_18ns_9ns_16_22_seq_1.v:88]
+INFO: [Synth 8-6157] synthesizing module 'Conv_mul_8ns_8ns_16_1_1' [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_mul_8ns_8ns_16_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'Conv_mul_8ns_8ns_16_1_1' (48#1) [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_mul_8ns_8ns_16_1_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Conv_mul_16ns_32ns_48_1_1' [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_mul_16ns_32ns_48_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'Conv_mul_16ns_32ns_48_1_1' (49#1) [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_mul_16ns_32ns_48_1_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Conv_mul_32ns_16ns_48_1_1' [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_mul_32ns_16ns_48_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'Conv_mul_32ns_16ns_48_1_1' (50#1) [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_mul_32ns_16ns_48_1_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Conv_mul_32s_16ns_48_1_1' [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_mul_32s_16ns_48_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'Conv_mul_32s_16ns_48_1_1' (51#1) [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_mul_32s_16ns_48_1_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Conv_mul_mul_16ns_16ns_32_4_1' [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_mul_mul_16ns_16ns_32_4_1.v:32]
+INFO: [Synth 8-6157] synthesizing module 'Conv_mul_mul_16ns_16ns_32_4_1_DSP48_0' [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_mul_mul_16ns_16ns_32_4_1.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'Conv_mul_mul_16ns_16ns_32_4_1_DSP48_0' (52#1) [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_mul_mul_16ns_16ns_32_4_1.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'Conv_mul_mul_16ns_16ns_32_4_1' (53#1) [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_mul_mul_16ns_16ns_32_4_1.v:32]
+INFO: [Synth 8-6157] synthesizing module 'Conv_mac_mul_sub_16ns_8ns_8ns_16_4_1' [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_mac_mul_sub_16ns_8ns_8ns_16_4_1.v:46]
+INFO: [Synth 8-6157] synthesizing module 'Conv_mac_mul_sub_16ns_8ns_8ns_16_4_1_DSP48_1' [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_mac_mul_sub_16ns_8ns_8ns_16_4_1.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'Conv_mac_mul_sub_16ns_8ns_8ns_16_4_1_DSP48_1' (54#1) [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_mac_mul_sub_16ns_8ns_8ns_16_4_1.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'Conv_mac_mul_sub_16ns_8ns_8ns_16_4_1' (55#1) [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_mac_mul_sub_16ns_8ns_8ns_16_4_1.v:46]
+INFO: [Synth 8-6157] synthesizing module 'Conv_mul_mul_16ns_8ns_16_4_1' [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_mul_mul_16ns_8ns_16_4_1.v:32]
+INFO: [Synth 8-6157] synthesizing module 'Conv_mul_mul_16ns_8ns_16_4_1_DSP48_2' [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_mul_mul_16ns_8ns_16_4_1.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'Conv_mul_mul_16ns_8ns_16_4_1_DSP48_2' (56#1) [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_mul_mul_16ns_8ns_16_4_1.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'Conv_mul_mul_16ns_8ns_16_4_1' (57#1) [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_mul_mul_16ns_8ns_16_4_1.v:32]
+INFO: [Synth 8-6157] synthesizing module 'Conv_mul_mul_16s_16ns_32_4_1' [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_mul_mul_16s_16ns_32_4_1.v:32]
+INFO: [Synth 8-6157] synthesizing module 'Conv_mul_mul_16s_16ns_32_4_1_DSP48_3' [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_mul_mul_16s_16ns_32_4_1.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'Conv_mul_mul_16s_16ns_32_4_1_DSP48_3' (58#1) [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_mul_mul_16s_16ns_32_4_1.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'Conv_mul_mul_16s_16ns_32_4_1' (59#1) [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_mul_mul_16s_16ns_32_4_1.v:32]
+INFO: [Synth 8-6157] synthesizing module 'Conv_mac_muladd_16ns_16ns_48ns_48_4_1' [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_mac_muladd_16ns_16ns_48ns_48_4_1.v:46]
+INFO: [Synth 8-6157] synthesizing module 'Conv_mac_muladd_16ns_16ns_48ns_48_4_1_DSP48_4' [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_mac_muladd_16ns_16ns_48ns_48_4_1.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'Conv_mac_muladd_16ns_16ns_48ns_48_4_1_DSP48_4' (60#1) [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_mac_muladd_16ns_16ns_48ns_48_4_1.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'Conv_mac_muladd_16ns_16ns_48ns_48_4_1' (61#1) [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_mac_muladd_16ns_16ns_48ns_48_4_1.v:46]
+INFO: [Synth 8-6157] synthesizing module 'Conv_mac_muladd_16s_16ns_48s_48_4_1' [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_mac_muladd_16s_16ns_48s_48_4_1.v:46]
+INFO: [Synth 8-6157] synthesizing module 'Conv_mac_muladd_16s_16ns_48s_48_4_1_DSP48_5' [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_mac_muladd_16s_16ns_48s_48_4_1.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'Conv_mac_muladd_16s_16ns_48s_48_4_1_DSP48_5' (62#1) [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_mac_muladd_16s_16ns_48s_48_4_1.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'Conv_mac_muladd_16s_16ns_48s_48_4_1' (63#1) [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_mac_muladd_16s_16ns_48s_48_4_1.v:46]
+INFO: [Synth 8-6157] synthesizing module 'Conv_mul_mul_8ns_16ns_24_4_1' [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_mul_mul_8ns_16ns_24_4_1.v:32]
+INFO: [Synth 8-6157] synthesizing module 'Conv_mul_mul_8ns_16ns_24_4_1_DSP48_6' [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_mul_mul_8ns_16ns_24_4_1.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'Conv_mul_mul_8ns_16ns_24_4_1_DSP48_6' (64#1) [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_mul_mul_8ns_16ns_24_4_1.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'Conv_mul_mul_8ns_16ns_24_4_1' (65#1) [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv_mul_mul_8ns_16ns_24_4_1.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'Conv' (66#1) [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ipshared/d957/hdl/verilog/Conv.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_Conv_0_1' (67#1) [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ip/design_1_Conv_0_1/synth/design_1_Conv_0_1.v:59]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1738.262 ; gain = 283.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1738.262 ; gain = 283.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1738.262 ; gain = 283.316
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.200 . Memory (MB): peak = 1738.262 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 160 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ip/design_1_Conv_0_1/constraints/Conv_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [g:/source/board/cnn_vivado/cnn_vivado.gen/sources_1/bd/design_1/ip/design_1_Conv_0_1/constraints/Conv_ooc.xdc] for cell 'inst'
+Parsing XDC File [G:/source/board/cnn_vivado/cnn_vivado.runs/design_1_Conv_0_1_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [G:/source/board/cnn_vivado/cnn_vivado.runs/design_1_Conv_0_1_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1822.996 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 16 instances were transformed.
+  DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 5 instances
+  FDE => FDRE: 11 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.167 . Memory (MB): peak = 1825.965 ; gain = 2.969
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1825.965 ; gain = 371.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xck26-sfvc784-2LV-c
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1825.965 ; gain = 371.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  G:/source/board/cnn_vivado/cnn_vivado.runs/design_1_Conv_0_1_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1825.965 ; gain = 371.020
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'Conv_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'Conv_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Conv_gmem_m_axi_reg_slice'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Conv_gmem_m_axi_reg_slice__parameterized0'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'Conv_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'Conv_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'Conv_gmem_m_axi_reg_slice'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'Conv_gmem_m_axi_reg_slice__parameterized0'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1825.965 ; gain = 371.020
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'inst/grp_Conv_Pipeline_Input_Channel_fu_384/fmul_32ns_32ns_32_3_max_dsp_1_U2/Conv_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized1) to 'inst/grp_Conv_Pipeline_Input_Channel_fu_384/fmul_32ns_32ns_32_3_max_dsp_1_U2/Conv_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/grp_Conv_Pipeline_Input_Channel_fu_384/fmul_32ns_32ns_32_3_max_dsp_1_U2/Conv_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized1) to 'inst/grp_Conv_Pipeline_Input_Channel_fu_384/fmul_32ns_32ns_32_3_max_dsp_1_U2/Conv_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/fadd_32ns_32ns_32_4_full_dsp_1_U14/Conv_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SUB_DELAY' (delay__parameterized1) to 'inst/fadd_32ns_32ns_32_4_full_dsp_1_U14/Conv_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/SUB_ADD_IP_DELAY'
+INFO: [Synth 8-223] decloning instance 'inst/fadd_32ns_32ns_32_4_full_dsp_1_U14/Conv_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized1) to 'inst/fadd_32ns_32ns_32_4_full_dsp_1_U14/Conv_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/fadd_32ns_32ns_32_4_full_dsp_1_U14/Conv_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized1) to 'inst/fadd_32ns_32ns_32_4_full_dsp_1_U14/Conv_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/fcmp_32ns_32ns_1_2_no_dsp_1_U15/Conv_fcmp_32ns_32ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized1) to 'inst/fcmp_32ns_32ns_1_2_no_dsp_1_U15/Conv_fcmp_32ns_32ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/fcmp_32ns_32ns_1_2_no_dsp_1_U15/Conv_fcmp_32ns_32ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized1) to 'inst/fcmp_32ns_32ns_1_2_no_dsp_1_U15/Conv_fcmp_32ns_32ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/fcmp_32ns_32ns_1_2_no_dsp_1_U15/Conv_fcmp_32ns_32ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized1) to 'inst/fcmp_32ns_32ns_1_2_no_dsp_1_U15/Conv_fcmp_32ns_32ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/fcmp_32ns_32ns_1_2_no_dsp_1_U15/Conv_fcmp_32ns_32ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized1) to 'inst/fcmp_32ns_32ns_1_2_no_dsp_1_U15/Conv_fcmp_32ns_32ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1248 (col length:96)
+BRAMs: 288 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 1825.965 ; gain = 371.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:53 ; elapsed = 00:00:57 . Memory (MB): peak = 2346.906 ; gain = 891.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 2434.395 ; gain = 979.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/gmem_m_axi_U/bus_write/buff_wdata/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem_m_axi_U/bus_read/buff_rdata/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:02 ; elapsed = 00:01:05 . Memory (MB): peak = 2444.426 ; gain = 989.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:06 ; elapsed = 00:01:09 . Memory (MB): peak = 2444.891 ; gain = 989.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:06 ; elapsed = 00:01:09 . Memory (MB): peak = 2444.891 ; gain = 989.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:07 ; elapsed = 00:01:10 . Memory (MB): peak = 2444.891 ; gain = 989.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:07 ; elapsed = 00:01:10 . Memory (MB): peak = 2444.891 ; gain = 989.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:07 ; elapsed = 00:01:10 . Memory (MB): peak = 2444.891 ; gain = 989.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:07 ; elapsed = 00:01:10 . Memory (MB): peak = 2444.891 ; gain = 989.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |CARRY8          |   197|
+|2     |DSP48E1         |     5|
+|3     |DSP_ALU         |    23|
+|5     |DSP_A_B_DATA    |    23|
+|13    |DSP_C_DATA      |    23|
+|15    |DSP_MULTIPLIER  |    23|
+|16    |DSP_M_DATA      |    23|
+|18    |DSP_OUTPUT      |    23|
+|20    |DSP_PREADD      |    23|
+|21    |DSP_PREADD_DATA |    23|
+|22    |LUT1            |    75|
+|23    |LUT2            |   609|
+|24    |LUT3            |  1180|
+|25    |LUT4            |   604|
+|26    |LUT5            |   347|
+|27    |LUT6            |   683|
+|28    |MUXCY           |   116|
+|29    |MUXF7           |    10|
+|30    |MUXF8           |     3|
+|31    |RAMB18E2        |     2|
+|32    |SRL16E          |   133|
+|33    |XORCY           |    25|
+|34    |FDE             |    11|
+|35    |FDRE            |  4322|
+|36    |FDSE            |     5|
++------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:07 ; elapsed = 00:01:10 . Memory (MB): peak = 2444.891 ; gain = 989.945
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:46 ; elapsed = 00:01:02 . Memory (MB): peak = 2444.891 ; gain = 902.242
+Synthesis Optimization Complete : Time (s): cpu = 00:01:07 ; elapsed = 00:01:10 . Memory (MB): peak = 2444.891 ; gain = 989.945
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.168 . Memory (MB): peak = 2444.891 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 390 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2479.211 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 59 instances were transformed.
+  (CARRY4) => CARRY8: 20 instances
+  DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 5 instances
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 23 instances
+  FDE => FDRE: 11 instances
+
+Synth Design complete, checksum: 5eba154c
+INFO: [Common 17-83] Releasing license: Synthesis
+131 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:15 ; elapsed = 00:01:29 . Memory (MB): peak = 2479.211 ; gain = 1267.164
+INFO: [Common 17-1381] The checkpoint 'G:/source/board/cnn_vivado/cnn_vivado.runs/design_1_Conv_0_1_synth_1/design_1_Conv_0_1.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_Conv_0_1, cache-ID = 239b92a9d9036200
+INFO: [Coretcl 2-1174] Renamed 160 cell refs.
+INFO: [Common 17-1381] The checkpoint 'G:/source/board/cnn_vivado/cnn_vivado.runs/design_1_Conv_0_1_synth_1/design_1_Conv_0_1.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_Conv_0_1_utilization_synth.rpt -pb design_1_Conv_0_1_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 30 17:11:44 2022...
